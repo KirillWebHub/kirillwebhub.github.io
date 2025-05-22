@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KirillWebHub</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirill | Fullstack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 </head>
 <body>
-    <h1>Привет 👋, я Кирилл</h1>
-    <p>Fullstack Developer | ITMO | React • Angular • Python</p>
+  <!-- Анимация паутины -->
+  <div id="tsparticles"></div>
+
+  <main class="content">
+    <section class="intro">
+      <h1>Привет 👋, я Кирилл</h1>
+      <p>Fullstack разработчик | React, Angular, Python, SQL</p>
+    </section>
+
+    <section class="about">
+      <h2>🧠 Обо мне</h2>
+      <p>Когда-то я запустил первый Hello World, а сегодня — создаю полноценные web-приложения. Учусь в ИТМО, углубляюсь в инфобез и развиваюсь как инженер. Мой путь — постоянный рост, от алгоритмов до системной архитектуры.</p>
+    </section>
+
+    <section class="projects">
+      <h2>🚀 Проекты</h2>
+      <div class="project-card">SecureLoginApp</div>
+      <div class="project-card">AlgoVisualizer</div>
+      <div class="project-card">Stepik WebHacker</div>
+    </section>
+
+    <section class="contacts">
+      <h2>📫 Контакты</h2>
+      <p><a href="https://t.me/areaBTC">Telegram</a> • <a href="https://github.com/KirillWebHub">GitHub</a></p>
+    </section>
+  </main>
+
+  <script>
+    tsParticles.load("tsparticles", {
+      background: { color: "#0d1117" },
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 2 },
+        move: { enable: true, speed: 1 },
+        links: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 }
+      }
+    });
+  </script>
 </body>
 </html>
